@@ -1,0 +1,349 @@
+<title>Alcance Petrolina</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Alcance Petrolina — todos os nossos canais em um só lugar." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=Karla:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  :root {
+    --ink: #26241f;
+    --ink-soft: #5a5548;
+    --cream: #f6f1e3;
+    --cream-deep: #ebe2c8;
+    --card: #fffdf6;
+    --teal: #1f5c52;
+    --teal-dark: #123e37;
+    --teal-soft: #3f7c70;
+    --teal-tint: #e3ede9;
+    --whatsapp: #22a06b;
+    --whatsapp-dark: #17784f;
+    --red: #b5342c;
+    --red-tint: #f4e0dc;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Karla", sans-serif;
+    color: var(--ink);
+    background-color: var(--cream);
+    background-image: radial-gradient(circle at 15% 8%, rgba(31, 92, 82, 0.14), transparent 42%),
+      radial-gradient(circle at 85% 18%, rgba(31, 92, 82, 0.12), transparent 45%),
+      radial-gradient(circle at 50% 95%, rgba(18, 62, 55, 0.08), transparent 50%);
+    min-height: 100vh;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .font-display {
+    font-family: "Fraunces", serif;
+  }
+
+  .tracking-tightest {
+    letter-spacing: -0.03em;
+  }
+
+  @keyframes rise-in {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .rise {
+    opacity: 0;
+    animation: rise-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .link-card {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .link-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .link-card:active {
+    transform: translateY(-1px) scale(0.988);
+  }
+
+  .link-card .arrow {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .link-card:hover .arrow {
+    transform: translateX(3px);
+  }
+
+  .link-card:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--cream), 0 0 0 5px var(--teal-dark);
+  }
+
+  .shadow-soft {
+    box-shadow: 0 1px 2px rgba(38, 36, 31, 0.04), 0 8px 20px -8px rgba(38, 36, 31, 0.12),
+      0 16px 32px -16px rgba(38, 36, 31, 0.08);
+  }
+
+  .shadow-soft-lg {
+    box-shadow: 0 2px 4px rgba(18, 62, 55, 0.10), 0 14px 28px -10px rgba(18, 62, 55, 0.35),
+      0 24px 48px -20px rgba(18, 62, 55, 0.25);
+  }
+
+  .avatar-ring {
+    box-shadow: 0 0 0 5px var(--card), 0 0 0 7px rgba(31, 92, 82, 0.35),
+      0 18px 36px -14px rgba(38, 36, 31, 0.35);
+  }
+</style>
+
+<body>
+  <div class="min-h-screen flex flex-col items-center px-5 py-14 sm:py-20">
+    <div class="w-full max-w-[420px] flex flex-col items-center">
+
+      <!-- Avatar -->
+      <div class="relative rise" style="animation-delay: 0.05s">
+        <div
+          class="absolute -inset-8 rounded-full blur-2xl opacity-60"
+          style="background: radial-gradient(circle, rgba(31,92,82,0.25), transparent 70%)"
+        ></div>
+        <div class="relative w-24 h-24 rounded-full overflow-hidden avatar-ring bg-[var(--card)]">
+          <img
+            src="brand_assets/LOGO  PETROLINA.jpg"
+            alt="Logo Alcance Petrolina"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- Name & subtitle -->
+      <h1
+        class="font-display font-semibold text-[28px] sm:text-[30px] tracking-tightest mt-5 rise"
+        style="animation-delay: 0.12s; color: var(--ink)"
+      >
+        Alcance Petrolina
+      </h1>
+      <p
+        class="text-[11px] font-semibold uppercase tracking-[0.14em] mt-2 rise"
+        style="animation-delay: 0.18s; color: var(--ink-soft)"
+      >
+        Igreja &middot; Petrolina, PE
+      </p>
+
+      <!-- Badge pills -->
+      <div class="flex items-center gap-2 mt-4 rise" style="animation-delay: 0.24s">
+        <span
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold shadow-soft"
+          style="background: var(--card); color: var(--teal-dark)"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" style="color: var(--teal)">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" />
+            <path d="M12 7v5l3.5 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          Culto aos domingos, 18h
+        </span>
+        <span
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[12px] font-semibold shadow-soft"
+          style="background: var(--card); color: var(--teal-dark)"
+        >
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2">
+            <path d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 4-4h1m5-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm5 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>
+          Células na cidade
+        </span>
+      </div>
+
+      <!-- Divider -->
+      <div
+        class="w-14 h-[3px] rounded-full mt-7 mb-7 rise"
+        style="animation-delay: 0.3s; background: linear-gradient(90deg, var(--teal), var(--teal-soft))"
+      ></div>
+
+      <!-- Links -->
+      <div class="w-full flex flex-col gap-3.5">
+
+        <!-- DNA Alcance -->
+        <a
+          href="https://surl.li/lumesh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-card rise group flex items-center gap-4 rounded-2xl px-4 py-3.5 shadow-soft-lg"
+          style="animation-delay: 0.36s; background: var(--ink)"
+        >
+          <span
+            class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
+            style="background: rgba(246,241,227,0.08)"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10 12 5 2 10l10 5 10-5Z" />
+              <path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" />
+            </svg>
+          </span>
+          <span class="flex flex-col min-w-0">
+            <span class="text-[10.5px] font-bold uppercase tracking-[0.12em]" style="color: rgba(246,241,227,0.55)">
+              Inscrições abertas
+            </span>
+            <span class="text-[16px] font-bold" style="color: var(--cream)">DNA Alcance</span>
+          </span>
+          <svg class="arrow ml-auto flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+
+        <!-- Secretaria Alcance (WhatsApp) -->
+        <a
+          href="#"
+          class="link-card rise group flex items-center gap-4 rounded-2xl px-4 py-3.5 shadow-soft-lg"
+          style="animation-delay: 0.42s; background: var(--ink)"
+        >
+          <span
+            class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center"
+            style="background: rgba(246,241,227,0.08)"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--teal-soft)">
+              <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.87.52 3.62 1.42 5.12L2 22l5.13-1.5a9.87 9.87 0 0 0 4.91 1.3h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm5.8 14a1.5 1.5 0 0 1-.63.66c-.29.16-1.25.6-2.44-.24-1.19-.85-2.72-2.4-3.6-3.55-.87-1.15-1.5-2.3-1.5-3.2 0-.9.47-1.34.64-1.53.17-.19.37-.24.5-.24h.36c.13 0 .3-.01.46.35.17.4.58 1.4.63 1.5.05.1.09.22.02.36-.08.15-.13.24-.25.37-.13.14-.27.31-.38.42-.13.13-.26.27-.11.53.15.27.68 1.12 1.46 1.81.99.88 1.83 1.16 2.11 1.29.28.13.44.11.6-.06.17-.17.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.26.13.44.19.5.3.06.11.06.62-.16 1.22Z" />
+            </svg>
+          </span>
+          <span class="flex flex-col min-w-0">
+            <span class="text-[10.5px] font-bold uppercase tracking-[0.12em]" style="color: rgba(246,241,227,0.55)">
+              Fale no whatsapp
+            </span>
+            <span class="text-[16px] font-bold" style="color: var(--cream)">Secretaria Alcance</span>
+          </span>
+          <svg class="arrow ml-auto flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+
+        <!-- Como Chegar -->
+        <a
+          href="https://share.google/Sl5ggGAB1QwAaGMad"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-card rise group flex items-center gap-4 rounded-2xl px-4 py-3.5 shadow-soft-lg"
+          style="animation-delay: 0.48s; background: var(--ink)"
+        >
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center" style="background: rgba(246,241,227,0.08)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 1 1 18 0Z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+          </span>
+          <span class="flex flex-col min-w-0">
+            <span class="text-[10.5px] font-bold uppercase tracking-[0.12em]" style="color: rgba(246,241,227,0.55)">
+              Petrolina, PE
+            </span>
+            <span class="text-[16px] font-bold" style="color: var(--cream)">Como Chegar</span>
+          </span>
+          <svg class="arrow ml-auto flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+
+        <!-- Participe de uma célula -->
+        <a
+          href="#"
+          class="link-card rise group flex items-center gap-4 rounded-2xl px-4 py-3.5 shadow-soft-lg"
+          style="animation-delay: 0.54s; background: var(--ink)"
+        >
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center" style="background: rgba(246,241,227,0.08)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 20h5v-2a4 4 0 0 0-3-3.87M9 20H4v-2a4 4 0 0 1 4-4h1m5-7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm5 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+            </svg>
+          </span>
+          <span class="flex flex-col min-w-0">
+            <span class="text-[10.5px] font-bold uppercase tracking-[0.12em]" style="color: rgba(246,241,227,0.55)">
+              Faça parte de uma comunidade
+            </span>
+            <span class="text-[16px] font-bold" style="color: var(--cream)">Participe de uma Célula</span>
+          </span>
+          <svg class="arrow ml-auto flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+
+        <!-- YouTube -->
+        <a
+          href="https://www.youtube.com/@AlcancePetrolina"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-card rise group flex items-center gap-4 rounded-2xl px-4 py-3.5 shadow-soft-lg"
+          style="animation-delay: 0.6s; background: var(--ink)"
+        >
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center" style="background: rgba(246,241,227,0.08)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--teal-soft)">
+              <path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 4 12 4 12 4s-7.5 0-9.4.4A3 3 0 0 0 .5 6.5 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.5 3 3 0 0 0 2.1 2.1C4.5 20 12 20 12 20s7.5 0 9.4-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.5ZM9.6 15.5v-7L16 12Z" />
+            </svg>
+          </span>
+          <span class="flex flex-col min-w-0">
+            <span class="text-[10.5px] font-bold uppercase tracking-[0.12em]" style="color: rgba(246,241,227,0.55)">
+              Inscreva-se no canal
+            </span>
+            <span class="text-[16px] font-bold" style="color: var(--cream)">Nosso Canal no YouTube</span>
+          </span>
+          <svg class="arrow ml-auto flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+
+        <!-- Instagram / Alcance Social -->
+        <a
+          href="https://www.instagram.com/alcancesocialvale/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="link-card rise group flex items-center gap-4 rounded-2xl px-4 py-3.5 shadow-soft-lg"
+          style="animation-delay: 0.66s; background: var(--ink)"
+        >
+          <span class="flex-shrink-0 w-11 h-11 rounded-xl flex items-center justify-center" style="background: rgba(246,241,227,0.08)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.2" cy="6.8" r="0.6" fill="var(--teal-soft)" stroke="none" />
+            </svg>
+          </span>
+          <span class="flex flex-col min-w-0">
+            <span class="text-[10.5px] font-bold uppercase tracking-[0.12em]" style="color: rgba(246,241,227,0.55)">
+              Siga no instagram
+            </span>
+            <span class="text-[16px] font-bold" style="color: var(--cream)">Alcance Social</span>
+          </span>
+          <svg class="arrow ml-auto flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal-soft)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Footer -->
+      <p
+        class="text-[12px] mt-10 rise flex items-center gap-1.5"
+        style="animation-delay: 0.76s; color: var(--ink-soft)"
+      >
+        Alcance Petrolina
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="var(--teal)">
+          <path d="M12 21s-7.5-4.6-10-9.3C.4 8.5 2 5 5.5 5c2 0 3.4 1 4.5 2.6C11.1 6 12.5 5 14.5 5 18 5 19.6 8.5 22 11.7 19.5 16.4 12 21 12 21Z" />
+        </svg>
+      </p>
+    </div>
+  </div>
+</body>
